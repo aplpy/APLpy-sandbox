@@ -37,7 +37,8 @@ ax = fig.add_wcs_axes('image.fits')
 ax.grayscale()
 fig.savefig('image.png')
 
-# By default, the axes would be added with the equivalent of subplot(1,1,1) but this can be customized with subplot and axes arguments:
+# By default, the axes would be added with the equivalent of subplot(1,1,1)
+# but this can be customized with subplot and axes arguments:
 
 ax = aplpy.WCSAxes('image.fits', subplot=(2, 2, 1))
 ax = aplpy.WCSAxes('image.fits', axes=[0.1, 0.1, 0.8, 0.8])
@@ -69,7 +70,8 @@ ax.grayscale('wrong.fits')
 
 ax = aplpy.WCSAxes('cube.fits', slices=[9])
 
-# To choose the first and third dimension and pick the 5th slice in the second dimension:
+# To choose the first and third dimension and pick the 5th slice in the
+# second dimension:
 
 ax = aplpy.WCSAxes('cube.fits', dimensions=[0,2], slices=[4])
 
